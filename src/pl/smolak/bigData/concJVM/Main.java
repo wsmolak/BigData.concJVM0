@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) {
         Main.sb = 123;
         int a = 3123;
-        int liczba = 18;
+        int liczba = 0;
         int liczba2 = 14;
         byte c;
         short d;
@@ -35,5 +35,11 @@ public class Main {
         w.sb = w.sb + 128;
         System.out.println("Zmienna a obiektu n: "+w.getA());
         System.out.println("Statyczna: "+w.sb);
+
+        try {
+            System.out.println(100/liczba);
+        }catch (Exception exc){
+            System.out.println(exc.toString());
+        }
     }
 }
