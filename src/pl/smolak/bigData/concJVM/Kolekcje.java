@@ -35,8 +35,26 @@ public class Kolekcje {
         System.out.println(wynik.toString());
     }
 
+    private static void test2() {
+        String[] list = "Wojtek Wojtek siedzi siedzi na na zajeciach zajeciach na na polibudzie polibudzie".split("\\s");
+        System.out.println(Arrays.toString(list));
+
+        Set<String> zbior = new HashSet<>();
+        List<String> duplikaty = new ArrayList<>();
+        for (String i : list) {
+            if (!zbior.add(i)) {
+                duplikaty.add(i);
+            }
+        }
+        zbior.removeAll(duplikaty);
+        System.out.println(duplikaty.toString());
+        System.out.println(zbior.toString());
+    }
+
     public static void main(String[] args) {
         System.out.println("Pierwsza wersja");
         test1();
+        System.out.println("Druga wersja");
+        test2();
     }
 }
