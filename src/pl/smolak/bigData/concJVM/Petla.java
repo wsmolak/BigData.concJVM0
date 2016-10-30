@@ -5,16 +5,14 @@ package pl.smolak.bigData.concJVM;
  */
 public class Petla {
     public static void main(String[] args) {
-        int a = 11;
-
-        if (a==12){
-            System.out.println("Nie");
-        }
-        else if (a==11) {
-            System.out.println("Moze");
-        }
-        else {
-            System.out.println("Tak");
+        for (int i = 1;i<=100;i++){
+            if (i%3==0) {
+                System.out.print(i+"fizz");
+            }
+            if (i%5==0) {
+                System.out.print(i+ "buzz");
+            }
+            System.out.println();
         }
     }
 }

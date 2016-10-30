@@ -36,7 +36,7 @@ public class Kolekcje {
     }
 
     private static void test2() {
-        String[] list = "Wojtek Wojtek siedzi siedzi na na zajeciach zajeciach na na polibudzie polibudzie".split("\\s");
+        String[] list = "Wojtek siedzi siedzi na na zajeciach zajeciach na na polibudzie polibudzie".split("\\s");
         System.out.println(Arrays.toString(list));
 
         Set<String> zbior = new HashSet<>();
