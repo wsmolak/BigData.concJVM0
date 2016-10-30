@@ -21,7 +21,7 @@ public class Kolekcje {
         Map<String, Integer> mapa = new HashMap<>();
         for (String i : list) {
             if (mapa.containsKey(i)) {
-                mapa.put(i, mapa.get(i) + 1);
+                mapa.put(i, mapa.get(i) + 1); //jezeli mapa zawiera juz klucz "i" zwiekszamy licznik
             } else {
                 mapa.put(i, 1);
             }
@@ -29,7 +29,7 @@ public class Kolekcje {
 
         for (Entry<String, Integer> i : mapa.entrySet()) {
             if (i.getValue() == 1) {
-                wynik.add(i.getKey());
+                wynik.add(i.getKey()); //dodajemy do wyniku tylko klucze z wartoscia 1
             }
         }
         System.out.println(wynik.toString());
